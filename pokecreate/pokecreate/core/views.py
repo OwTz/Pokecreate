@@ -8,3 +8,6 @@ def index(request):
 
 def pokemons(request):
     return render(request, 'core/pokemons.html')
+
+def sobre(request):
+    return render(request, 'core/sobre.html')

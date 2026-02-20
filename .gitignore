@@ -7,3 +7,11 @@
 # ENV Files
 .env
 **.env
+
+# Cache
+**/__pycache__
+**/migrations
+
+# don't save a database
+pokecreate/db.sqlite3
+./pokecreate\db.sqlite3
