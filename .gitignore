@@ -1,0 +1,9 @@
+
+# IGNORE ENVIROUMENTS
+.venv
+./.venv
+**venv
+
+# ENV Files
+.env
+**.env
