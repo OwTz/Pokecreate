@@ -1,5 +1,32 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p> Página de exibição dos pokemons criados </p>
+<div class="container">
+<h1>Pokomens criados </h1>
+    <table class="table">
+        <thead>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <td> Nome </td>
+                <td> Categoria </td>
+                <td> Descrição </td>
+                <td> Data de Modificação </td>
+            </tr>
+
+        </tbody>
+
+        {% for pokemon in pokemons %}
+            <tr>
+                <td> {{ pokemon.nome }} </td>
+                <td> {{ pokemon.categoria }} </td>
+                <td> {{ pokemon.descricao }} </td>
+                <td> {{ pokemon.data_modificacao }} </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+</div>
 {% endblock %}
