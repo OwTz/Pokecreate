@@ -25,3 +25,6 @@ def pokemons(request):
 
 def sobre(request):
     return render(request, 'core/sobre.html')
+
+def cadastro(request):
+    return render(request, 'core/cadastropokemons.html')
