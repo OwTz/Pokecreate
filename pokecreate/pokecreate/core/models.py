@@ -4,6 +4,8 @@ from django.db import models
 
 
 class Pokemon(models.Model):
+    
+    id = models.AutoField(primary_key=True)
     nome : str = models.CharField(max_length=100)
     categoria : str = models.CharField(max_length=25)
     descricao : str = models.CharField(max_length=10000)

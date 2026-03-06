@@ -10,6 +10,7 @@
         <tbody>
 
             <tr>
+                <td> ID </td>
                 <td> Nome </td>
                 <td> Categoria </td>
                 <td> Descrição </td>
@@ -20,6 +21,7 @@
 
         {% for pokemon in pokemons %}
             <tr>
+                <td> {{ pokemon.id }} </td>
                 <td> {{ pokemon.nome }} </td>
                 <td> {{ pokemon.categoria }} </td>
                 <td> {{ pokemon.descricao }} </td>

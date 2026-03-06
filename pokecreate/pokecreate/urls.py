@@ -20,11 +20,13 @@ from pokecreate.core.views import index
 from pokecreate.core.views import pokemons
 from pokecreate.core.views import sobre
 from pokecreate.core.views import cadastro
+from pokecreate.core.views import detalhes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='home'),
     path('pokemons/', pokemons, name='pokemons'),
     path('sobre/', sobre, name='sobre'),
-    path('cadastro/', cadastro, name='cadastro')
+    path('cadastro/', cadastro, name='cadastro'),
+    path('detalhes/<int:id>', detalhes, name='detalhes')
 ]
