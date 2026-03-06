@@ -36,7 +36,7 @@ def detalhes(request, id):
     pokemon = get_object_or_404(Pokemon, pk=id)
 
     ctx = {
-        Pokemon : pokemon
+        "pokemon" : pokemon
     }
 
     return render(request, 'core/detalhe.html', context=ctx)
